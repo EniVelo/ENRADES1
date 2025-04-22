@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ENRADES</title>
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+          font-family: 'Roboto', sans-serif;
+        }
+    
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+    
+        .header-text {
+          text-align: center;
+          height: 30px;
+          font-family: sans-serif;
+          font-size: 13px;
+        }
+    
+        .hr {
+          margin-top: 12px;
+          border: 1px solid pink;
+          width: 100%;
+        }
+    
+        .header-a {
+          height: 200px;
+          display: flex;
+          align-items: center;
+        }
+    
+        .header-a a {
+          text-decoration: none;
+          color: black;
+          margin-left: 20px;
+        }
+    
+        .header-a .active {
+          border-bottom: 2px solid #000;
+        }
+    
+        .logo a {
+          color: pink;
+          margin-right: 200px;
+          text-decoration: none;
+        }
+    
+        .search-bar {
+          margin-left: 250px;
+          display: flex;
+          align-items: center;
+        }
+    
+        .search-input {
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-left: 5px;
+        }
+    
+        
+    
+        .footer {
+          height: 150px;
+        }
+    
+        .About-kontakti {
+    text-align: center;
+    padding: 50px;
+}
+
+.About-kontakti h1 {
+    color: #333;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f50057;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ff3366;
+}
+
+          </style>
+</head>
+
+<body>
+  
+ 
+    <header>
+        <div class="header-text">
+            <p>Hey Bukuroshe, Mire se erdhe ne ENRADES</p>
+        </div>
+        <div class="hr"></div>
+        <div class="header-a">
+            <div class="logo">
+                <a href="./kreu.html">
+                    <h1>ENRADES</h1>
+                </a>
+            </div>
+            <a href="./kreu.html">Kreu</a>
+            <a href="./about.html">Kush jemi</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./kontakti.html" class="active">Na Kontaktoni</a>
+
+            <div style="margin-right: 20px;"></div>
+
+            <div class="search-bar">
+                <span>Search:</span>
+                <input type="text" class="search-input" placeholder="Type here...">
+            </div>
+        </div>
+    </header>
+
+    <div class="About-kontakti">
+        <h1>Kontakti</h1>
+       
+        <div class="form-container">
+            <div class="input-group">
+                <label for="name">Emri:</label>
+                <input type="text" id="name" name="name" placeholder="Shkruani emrin tuaj">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Shkruani email-in tuaj">
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Telefoni:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Shkruani numrin tuaj">
+            </div>
+            <div class="input-group">
+              <label for="opinion">Comment</label>
+              <textarea id="opinion" name="opinion" rows="4" placeholder="Comment..."></textarea>
+          </div>
+
+            <button class="submit-button" onclick="submitForm()">Submit</button>
+        </div>
+        <!-- End of Form Section -->
+    </div>
+
+    <script>
+      function submitForm() {
+          alert("Faleminderit per kontaktin!");
+      }
+  </script>
+
+ 
+    <div class="footer"></div>
+
+</body>
+
+</html>

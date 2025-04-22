@@ -1,0 +1,1 @@
+Përdoruesit me email saraperhati15@gmail.com iu dërgua ky link rikuperimi: http://localhost/ENRADES/reset_password.php?token=25fa0c6234f6f235feb8778a4493ee6d0530cadc0c6c2369974e3b691acd71c72de49a12b1059f5f477816008293fd649328
