@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bronzer</title>
+</head>
+<style>
+    .button-container {
+        text-align: right;
+
+    }
+</style>
+
+<body>
+
+    <div style="display: inline-flex; align-content: center;">
+        <img src="../img/bronzer.jpg" alt="img" height="700">
+        <div>
+            <div>
+                <p style="color:rgb(239, 155, 224);">ENRADES COSMETICS</p>
+                <h1 style="color:rgb(34, 34, 34)">Skulpture Bronzer Duo</h1>
+                <h2 style="color:rgb(168, 160, 167);"> 1,400 L</h2>
+                <p>Nxirës pluhur DUO, definon dhe strukturon format e fytyrës, duke theksuar tiparet më të bukura të saj
+                    . Për një efekt më të ndezur apliko dy shtresa. Siç nga vetë emri Skulpturë, ky nxirës do krijojë në
+                    ju një vepër Arti.
+                </p>
+
+                <br>
+                <label for="quantity" style="color: rgb(239, 155, 224);">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1"
+                    style="padding :10px 20px ; font-size: 16px;">
+                <hr>
+
+                <button onclick="showIngredients()">Përbërësit/Ingredients</button>
+                <p id="ingredientsParagraph" style="display: none;">
+                    Tealc, Mica, Magnesium Stearate, Trimethylsiloxysicilate, Cyclopentasiloxane, Caprylic/Capric,
+                    Triglyceride, C13-15 Alkane, Dimethicone, Dimethicone Crosspolymer, Phenoxythanol, Caprylyl glycol,
+                    Iron Oxides (CI 77491), IRON OXIDES (CI 77492), IRON OXIDES (CI 77499).
+                </p>
+
+                <script>
+                    function showIngredients() {
+                        var paragraph = document.getElementById("ingredientsParagraph");
+                        paragraph.style.display = "block";
+                    }
+                </script>
+
+                <hr>
+
+                <button onclick="perdorimi()">Perdorimi</button>
+                <p id="sitaperdorim" style="display: none; box-shadow: 60%;">
+                    Ky produkt është shumë i pigmentuar, aplikoni si fillim një sasi te vogël dhe përhapeni. Më pas
+                    shtoni shtresat e ndryshme sipas dëshirës dhe rezultatit që dëshironi.
+                </p>
+
+                <script>
+                    function perdorimi() {
+                        var paragraph = document.getElementById("sitaperdorim");
+                        paragraph.style.display = "block";
+                    }
+                </script>
+                <hr>
+                <button onclick="dergesa()">Dergesa & Kthimi</button>
+                <p id="kthimi" style="display: none;">
+                    Produktet Selen dërgohen brenda 24h dhe në bazë të vendodhjes arrijnë per 24 h në Tiranë/ 48H ne
+                    rrethe. 5-15 ditë në Europë. Kthimi bëhët vetëm në rast kur produkti është dëmtuar nga trasporti.
+                </p>
+
+                <script>
+                    function dergesa() {
+                        var paragraph = document.getElementById("kthimi");
+                        paragraph.style.display = "block";
+                    }
+                </script>
+
+                <hr>
+
+
+                <div class="button-container">
+                    <button
+                        style="color: white; background-color: rgb(237, 192, 229); padding: 10px 20px; font-size: 16px;">
+                        <a href="blerja.html" style="color: white; text-decoration: none;">Blej</a>
+                    </button>
+                    <br><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
